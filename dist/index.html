@@ -6,38 +6,88 @@
   <link href="./style.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
-<body class="bg-black">
+<body class="bg-[#e5e7df]">
   <div class="h-20 w-full flex justify-between items-center sticky top-0 z-10 bg-opacity-50 backdrop-blur-2xl">
-      <div class="text-cyan-400 text-6xl font-extrabold pl-14 transition-colors duration-500 ease-in-out hover:text-yellow-300 cursor-pointer">A<span class="text-white">.</span></div>
-      <ul class="text-gray-300 flex text-2xl  space-x-10 pr-9 ">
+      <div class="text-[#1e1e1e] text-6xl font-extrabold pl-30 transition-colors duration-500 ease-in-out hover:text-[#a18053] cursor-pointer">A<span class="text-gray-500">.</span></div>
+
+      <ul class="text-[#1e1e1e] flex text-2xl font-bold space-x-10 pr-9 ">
         <li class="relative cursor-pointer group">Home
-          <span class="absolute left-0 bottom-0 w-0 h-0.5 bg-gray-300 transition-all duration-300 group-hover:w-full"></span>
+          <span class="absolute left-0 bottom-0 w-0 h-0.5 bg-[#1e1e1e] transition-all duration-300 group-hover:w-full"></span>
         </li>
         <li class="relative cursor-pointer group">About
-          <span class="absolute left-0 bottom-0 w-0 h-0.5 bg-gray-300 transition-all duration-300 group-hover:w-full"></span>
+          <span class="absolute left-0 bottom-0 w-0 h-0.5 bg-[#1e1e1e] transition-all duration-300 group-hover:w-full"></span>
         </li>
         <li class="relative cursor-pointer group">Projects
-          <span class="absolute left-0 bottom-0 w-0 h-0.5 bg-gray-300 transition-all duration-300 group-hover:w-full"></span>
+          <span class="absolute left-0 bottom-0 w-0 h-0.5 bg-[#1e1e1e] transition-all duration-300 group-hover:w-full"></span>
         </li>
         <li class="relative cursor-pointer group">Education
-          <span class="absolute left-0 bottom-0 w-0 h-0.5 bg-gray-300 transition-all duration-300 group-hover:w-full"></span>
+          <span class="absolute left-0 bottom-0 w-0 h-0.5 bg-[#1e1e1e] transition-all duration-300 group-hover:w-full"></span>
         </li>
         <li class="relative cursor-pointer group">Contact
-          <span class="absolute left-0 bottom-0 w-0 h-0.5 bg-gray-300 transition-all duration-300 group-hover:w-full"></span>
+          <span class="absolute left-0 bottom-0 w-0 h-0.5 bg-[#1e1e1e] transition-all duration-300 group-hover:w-full"></span>
         </li>
       </ul>
   </div>
 
-  <div class="flex w-full px-14 pt-20">
-    <div class="text-gray-200 font-extrabold text-6xl self-start pt-8 font-poppins">Hey! I'm  Ayan
-      <div class="text-4xl font-medium text-gray-200 pt-3 leading-14 ">Frontend Developer | Passionate About Modern Web Technologies</div>
+  <div class="flex w-full justify-between items-center pt-20">
+    <div class="text-[#1e1e1e] font-extrabold text-8xl self-start pt-8 pl-30 font-poppins">
+      <div>Hey!</div>
+      
+      <div class="relative">
+        I'm
+          <span class="absolute opacity-100 animate-fade-out">Ayan</span>
+
+          <span class="opacity-0 animate-fade-in">Frontend Developer</span>
+
+      </div>
     </div>
-    <img src="Homeimg.png" alt="" class="h-80 w-90 pr-10 ml-[600px]">
+
+    <div class="text-right pr-30">
+    <img src="Homeimg.png" alt="" class="h-110 w-135 ">
+    </div>
   </div>
 
-  <div class="h-96 bg-gray-800 text-white p-10">
-    <p>Scroll down to see the sticky navbar with glassmorphism effect in action!</p>
+  <div class="bg-[#1e1e1e] w-full h-20 flex justify-center items-center">
+    <div class="overflow-hidden w-full">
+      <div class="text-white text-xl font-semibold animte-scroll flex justify-center">
+        HTML . CSS . JavaScript . TailwindCSS . React . Python . C++ . Git . MySQL
+      </div>
+    </div>
   </div>
-  
+
 </body>
 </html>
+
+
+
+
+
+<style>
+  @keyframes scrollRightToLeft {
+0% {
+  transform: translateX(100%); /* Start off the screen on the right */
+}
+100% {
+  transform: translateX(-100%); /* End off the screen on the left */
+}
+}
+
+.animate-scroll {
+animation: scrollRightToLeft 10s linear infinite; /* Adjust the duration (10s) for scrolling speed */
+}
+
+@keyframes fadeOut {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+.animate-fade-out {
+  animation: fadeOut 0.5s ease-in-out 1.5s forwards;
+}
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-in-out 2s forwards;
+} 
+</style>
