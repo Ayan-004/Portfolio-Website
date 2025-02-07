@@ -1,0 +1,67 @@
+<div class="w-full h-100 px-30 pt-10 flex gap-14 ">
+
+      <div class=" swiper-slide group relative h-70 w-70 rounded-3xl mt-5 border-[#1e1e1e] border-3 flex flex-wrap justify-center items-center hover: cursor-pointer">
+        <img src="html.png" alt="HTML" class="duration-600 group-hover:blur-xl">
+        <span class="absolute text-4xl font-bold text-[#1e1e1e] opacity-0 duration-500 group-hover:opacity-100">HTML</span>
+      </div>
+
+      <div class="swiper-slide group relative h-70 w-70 rounded-3xl mt-5 border-[#1e1e1e] border-3 flex flex-wrap justify-center items-center hover: cursor-pointer">
+        <img src="cssLogo.png" alt="HTML" class="duration-600 group-hover:blur-xl">
+        <span class="absolute text-4xl font-bold text-[#1e1e1e] opacity-0 duration-500 group-hover:opacity-100">CSS</span>
+      </div>
+
+      <div class="swiper-slide group relative h-70 w-70 rounded-3xl mt-5 border-[#1e1e1e] border-3 flex flex-wrap justify-center items-center hover: cursor-pointer">
+        <img src="javascriptLogo.png" alt="HTML" class="duration-600 group-hover:blur-xl">
+        <span class="absolute text-4xl font-bold text-[#1e1e1e] opacity-0 duration-500 group-hover:opacity-100">JavaScript</span>
+      </div>
+
+      <div class="swiper-slide group relative h-70 w-70 rounded-3xl mt-5 border-[#1e1e1e] border-3 flex flex-wrap justify-center items-center hover: cursor-pointer">
+        <img src="tailwindcssLogo.png" alt="HTML" class="duration-600 group-hover:blur-xl">
+        <span class="absolute text-4xl font-bold text-[#1e1e1e] opacity-0 duration-500 group-hover:opacity-100">Tailwind CSS</span>
+      </div>
+    </div>
+  
+    <!-- second row -->
+
+    <div class="w-full h-100 px-30 -mt-5 flex gap-14">
+
+      <div class="swiper-slide group relative h-70 w-70 rounded-3xl mt-5 border-[#1e1e1e] border-3 flex flex-wrap justify-center items-center hover: cursor-pointer">
+        <img src="reactLogo.png" alt="HTML" class="duration-600 group-hover:blur-xl">
+        <span class="absolute text-4xl font-bold text-[#1e1e1e] opacity-0 duration-500 group-hover:opacity-100">React</span>
+      </div>
+
+      <div class="swiper-slide group relative h-70 w-70 rounded-3xl mt-5 border-[#1e1e1e] border-3 flex flex-wrap justify-center items-center hover: cursor-pointer">
+        <img src="mysqlLogo.png" alt="HTML" class="duration-600 group-hover:blur-xl">
+        <span class="absolute text-4xl font-bold text-[#1e1e1e] opacity-0 duration-500 group-hover:opacity-100">MySQL</span>
+      </div>
+
+      <div class="swiper-slide group relative h-70 w-70 rounded-3xl mt-5 border-[#1e1e1e] border-3 flex flex-wrap justify-center items-center hover: cursor-pointer">
+        <img src="pythonLogo.png" alt="HTML" class="duration-600 group-hover:blur-xl">
+        <span class="absolute text-4xl font-bold text-[#1e1e1e] opacity-0 duration-500 group-hover:opacity-100">Python</span>
+      </div>
+
+      <div class="swiper-slide group relative h-70 w-70 rounded-3xl mt-5 border-[#1e1e1e] border-3 flex flex-wrap justify-center items-center hover: cursor-pointer">
+        <img src="gitLogo.png" alt="HTML" class="duration-600 group-hover:blur-xl">
+        <span class="absolute text-4xl font-bold text-[#1e1e1e] opacity-0 duration-500 group-hover:opacity-100">Git</span>
+      </div>
+    </div>
+
+    <!-- third row -->
+
+    <div class="w-full h-100 px-30 -mt-15 flex gap-14">
+
+      <div class="swiper-slidegroup relative h-70 w-70 rounded-3xl mt-5 border-[#1e1e1e] border-3 flex flex-wrap justify-center items-center hover: cursor-pointer">
+        <img src="CLogo.png" alt="HTML" class="size-50 duration-600 group-hover:blur-xl">
+        <span class="absolute text-4xl font-bold text-[#1e1e1e] opacity-0 duration-500 group-hover:opacity-100">C</span>
+      </div>
+
+      <div class="swiper-slide group relative h-70 w-70 rounded-3xl mt-5 border-[#1e1e1e] border-3 flex flex-wrap justify-center items-center hover: cursor-pointer">
+        <img src="C++Logo.png" alt="HTML" class="duration-600 group-hover:blur-xl">
+        <span class="absolute text-4xl font-bold text-[#1e1e1e] opacity-0 duration-500 group-hover:opacity-100">C++</span>
+      </div>
+
+      <div class="swiper-slide group relative h-70 w-70 rounded-3xl mt-5 border-[#1e1e1e] border-3 flex flex-wrap justify-center items-center hover: cursor-pointer">
+        <img src="javaLogo.png" alt="HTML" class="duration-600 group-hover:blur-xl">
+        <span class="absolute text-4xl font-bold text-[#1e1e1e] opacity-0 duration-500 group-hover:opacity-100">Java</span>
+      </div>
+    </div>
