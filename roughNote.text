@@ -65,3 +65,33 @@
         <span class="absolute text-4xl font-bold text-[#1e1e1e] opacity-0 duration-500 group-hover:opacity-100">Java</span>
       </div>
     </div>
+
+
+
+
+
+
+
+
+
+    const slider = document.getElementById("slider");
+  const prev = document.getElementById("prev");
+  const next = document.getElementById("next");
+
+  let scrollAmount = 0;
+  const itemWidth = 220; // Width of one item (adjustable)
+  const visibleItems =5; // Number of visible items
+
+  next.addEventListener("click", () => {
+    if (scrollAmount < slider.scrollWidth - itemWidth * visibleItems) {
+      scrollAmount += itemWidth * visibleItems;
+      slider.style.transform = `translateX(-${scrollAmount}px)`;
+    }
+  });
+
+  prev.addEventListener("click", () => {
+    if (scrollAmount > 0) {
+      scrollAmount -= itemWidth * visibleItems;
+      slider.style.transform = `translateX(-${scrollAmount}px)`;
+    }
+  });
