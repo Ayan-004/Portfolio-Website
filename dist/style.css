@@ -882,20 +882,20 @@
   .h-10 {
     height: calc(var(--spacing) * 10);
   }
-  .h-30 {
-    height: calc(var(--spacing) * 30);
-  }
-  .h-100 {
-    height: calc(var(--spacing) * 100);
-  }
   .h-15 {
     height: calc(var(--spacing) * 15);
   }
   .h-20 {
     height: calc(var(--spacing) * 20);
   }
+  .h-30 {
+    height: calc(var(--spacing) * 30);
+  }
   .h-70 {
     height: calc(var(--spacing) * 70);
+  }
+  .h-100 {
+    height: calc(var(--spacing) * 100);
   }
   .h-110 {
     height: calc(var(--spacing) * 110);
@@ -2620,6 +2620,34 @@
       }
     }
   }
+  .placeholder\:ml-6 {
+    &::placeholder {
+      margin-left: calc(var(--spacing) * 6);
+    }
+  }
+  .placeholder\:pl-6 {
+    &::placeholder {
+      padding-left: calc(var(--spacing) * 6);
+    }
+  }
+  .placeholder\:text-2xl {
+    &::placeholder {
+      font-size: var(--text-2xl);
+      line-height: var(--tw-leading, var(--text-2xl--line-height));
+    }
+  }
+  .placeholder\:text-4xl {
+    &::placeholder {
+      font-size: var(--text-4xl);
+      line-height: var(--tw-leading, var(--text-4xl--line-height));
+    }
+  }
+  .placeholder\:font-bold {
+    &::placeholder {
+      --tw-font-weight: var(--font-weight-bold);
+      font-weight: var(--font-weight-bold);
+    }
+  }
   .hover\:scale-98 {
     &:hover {
       @media (hover: hover) {
@@ -2636,6 +2664,16 @@
         --tw-scale-x: 110%;
         --tw-scale-y: 110%;
         --tw-scale-z: 110%;
+        scale: var(--tw-scale-x) var(--tw-scale-y);
+      }
+    }
+  }
+  .hover\:scale-150 {
+    &:hover {
+      @media (hover: hover) {
+        --tw-scale-x: 150%;
+        --tw-scale-y: 150%;
+        --tw-scale-z: 150%;
         scale: var(--tw-scale-x) var(--tw-scale-y);
       }
     }
@@ -2671,6 +2709,14 @@
   .focus\:bg-\[\#e5e7df\] {
     &:focus {
       background-color: #e5e7df;
+    }
+  }
+  .focus\:placeholder\:text-2xl {
+    &:focus {
+      &::placeholder {
+        font-size: var(--text-2xl);
+        line-height: var(--tw-leading, var(--text-2xl--line-height));
+      }
     }
   }
   .md\:flex {
