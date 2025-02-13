@@ -6,22 +6,27 @@
   <link href="./style.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
-<body class="bg-[#e5e7df]">
-  <div class="fixed top-0 w-full z-50">
-  <div class="h-20 w-full flex justify-between items-center bg-opacity-50 backdrop-blur-xl shadow-xs">
-      <div class="text-[#1e1e1e] text-6xl font-extrabold pl-30 transition-colors duration-500 ease-in-out hover:text-[#a18053] cursor-pointer">A<span class="text-gray-500">.</span></div>
+<body class="bg-[#e5e7df] flex flex-wrap">
 
-      <ul class="text-[#1e1e1e] flex text-2xl font-bold space-x-10 pr-9 ">
-        <li class="relative cursor-pointer group">Home
+  <section id="home">
+  <div class="fixed top-0 w-full z-50">
+  <div class="h-20 w-full flex justify-between items-center bg-opacity-50 backdrop-blur-xl md:px-12 lg:px-20">
+
+      <div class="text-[#1e1e1e] text-5xl md:text-6xl font-extrabold pl-30 transition-colors duration-500 ease-in-out hover:text-[#a18053] cursor-pointer">A<span class="text-gray-500">.</span></div>
+
+      <button id="menu-btn" class="md:hidden text-3xl">☰</button>
+
+      <ul class="hidden md:flex text-[#1e1e1e] text-lg md:text-2xl font-bold space-x-6 lg:space-x-10 pr-9 ">
+        <li class="relative cursor-pointer group"><a href="#home">Home</a>
           <span class="absolute left-0 bottom-0 w-0 h-0.5 bg-[#1e1e1e] transition-all duration-300 group-hover:w-full"></span>
         </li>
-        <li class="relative cursor-pointer group">About
+        <li class="relative cursor-pointer group"><a href="#about">About</a>
           <span class="absolute left-0 bottom-0 w-0 h-0.5 bg-[#1e1e1e] transition-all duration-300 group-hover:w-full"></span>
         </li>
-        <li class="relative cursor-pointer group">Education
+        <li class="relative cursor-pointer group"><a href="#education">Education</a>
           <span class="absolute left-0 bottom-0 w-0 h-0.5 bg-[#1e1e1e] transition-all duration-300 group-hover:w-full"></span>
         </li>
-        <li class="relative cursor-pointer group">Contact
+        <li class="relative cursor-pointer group"><a href="#contact">Contact</a>
           <span class="absolute left-0 bottom-0 w-0 h-0.5 bg-[#1e1e1e] transition-all duration-300 group-hover:w-full"></span>
         </li>
       </ul>
@@ -46,9 +51,11 @@
     </div>
     
   </div>
+</section>
 
   <div class="bg-[#1e1e1e] w-full h-3 mt-21"><!--black strip--></div>
 
+  <section id="about">
   <div class="w-full ">
     <div class="w-full mt-20 text-[#1e1e1e] text-9xl font-extrabold flex flex-wrap justify-end pr-30 "><span class="transition-colors duration-500 ease-in-out hover:text-[#a18053] ">A</span>bout<span class="text-gray-500">.</span></div>
 
@@ -172,11 +179,13 @@
         </svg>
       </button>
     </div>
-
+  </section>
+    
     <div class="bg-[#1e1e1e] w-full h-3 mt-30"><!--black strip--></div>
-
+    
   </div>
 
+  <section id="education">
   <div class="w-full">
     <div class="w-full mt-20 text-[#1e1e1e] text-9xl font-extrabold flex flex-wrap justify-start px-30 ">Education<span class="text-gray-500">.</span></div>
 
@@ -191,35 +200,51 @@
       <span class="text-3xl text-[#1e1e1e] font-thin leading-9 flex px-30 mt-3">Muhammadiya English High School | Passed 10th in 2020</span>
     </div>
   </div>
-
+</section>
   <div class="bg-[#1e1e1e] w-full h-3 mt-30"><!--black strip--></div>
 
+  <section id="contact">
   <div class="w-full">
     <div class="w-full mt-20 text-[#1e1e1e] text-9xl font-extrabold flex flex-wrap justify-end pr-30 ">Contact<span class="text-gray-500">.</span></div>
 
-    <div class="flex justify-center items-center mt-15">
-      <div class="w-120 h-100 border-2 rounded-4xl flex items-center">
-        <form action="https://formspree.io/f/xdkalgav" method="POST" class="ml-10">
-          <label>
-            <p class="text-[#1e1e1e] font-bold text-2xl ml-3">Name</p>
-            <input type="text" placeholder="Name" name="name" required class="w-80 h-15 border-2 rounded-2xl pl-2 ml-3">
-          </label>
+    <div class="flex justify-center items-center mt-20">
+      <div class="w-120 h-120 border-2 rounded-4xl flex justify-center items-center">
+        <form action="https://formspree.io/f/xdkalgav" method="POST">
 
-          <label>
-            <p class="text-[#1e1e1e] font-bold text-2xl ml-3">Email</p>
-            <input type="text" placeholder="Email" name="email" required class="w-80 h-15 border-2 rounded-2xl pl-2 ml-3">
-          </label>
+            <p class="text-[#1e1e1e] font-bold text-2xl">Name</p>
+            <input type="text" name="name" required class="bg-[#e5e7df] w-80 h-15 border-2 pl-3 rounded-2xl placeholder: font-bold">
 
-          <label>
-            <p class="text-[#1e1e1e] font-bold text-2xl ml-3">Message</p>
-            <input type="text" placeholder="Message" name="message" required class="w-80 h-15 border-2 rounded-2xl pl-2 ml-3">
-          </label>
+            <p class="text-[#1e1e1e] font-bold text-2xl">Email</p>
+            <input type="text" name="email" required class="bg-[#e5e7df] w-80 h-15 border-2 pl-3 rounded-2xl focus:bg-[#e5e7df] placeholder: font-bold">
+
+            <p class="text-[#1e1e1e] font-bold text-2xl">Message</p>
+            <textarea rows="4" cols="50"  type="text" name="message" required class="bg-[#e5e7df] w-80 h-30 border-2 pl-3 pt-3 rounded-2xl focus:bg-[#e5e7df] placeholder: font-bold resize-none"></textarea>
+
           
-          <button class="w-20 h-10 border-2 rounded-lg flex justify-center items-center">Submit</button>
+          <div class="flex justify-center items-center mt-5">
+            <button class=" bg-[#e5e7df] text-[#1e1e1e] w-25 h-10 border-2 rounded-xl transition-all ease-in-out duration-500 hover:bg-[#1e1e1e] cursor-pointer hover:text-[#e5e7df]">Submit</button>
+          </div>
         </form>
       </div>
     </div>
   </div>
+</section>
+  <div class="bg-[#1e1e1e] text-[#e5e7df] font-bold w-full h-100 mt-30 flex flex-col items-center justify-center">
+    <h1 class=" text-lg">Designed & Developed by Ayan | © 2025 All Rights Reserved</h1>
+
+    <div class="mt-15 h-10 w-10 flex justify-center space-x-8">
+
+        <img src="/dist/linkedinLogo.png" alt="linkedin Logo" class="transition-all duration-300 ease-in-out block hover:scale-110 cursor-pointer" onclick="window.open('https://www.linkedin.com/in/ayan-shaikh-3659a0289/', '_blank');">
+
+        <img src="instagramLogo.png" alt="instagram Logo" class="transition-all duration-300 ease-in-out hover:scale-110 cursor-pointer" onclick="window.open('https://www.instagram.com/iamayyan_/', '_blank');">
+
+        <img src="githubLogo.png" alt="github Logo" class="transition-all duration-300 ease-in-out hover:scale-110 cursor-pointer" onclick="window.open('https://github.com/Ayan-004', '_blank');">
+
+      </div>
+
+        <h1 class="mt-15 text-lg">Looking for a developer? Let's connect!</h1>
+  </div>
+
 </body>
 <script src="index.js"></script>
 </html>
@@ -243,5 +268,16 @@
 .animate-fade-in {
   animation: fadeIn 0.5s ease-in-out 2s forwards;
 } 
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+textarea:-webkit-autofill, 
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus {
+    background-color: #e5e7df !important;
+    -webkit-box-shadow: 0 0 0px 1000px #e5e7df inset !important;
+    color: #1e1e1e !important;
+}
 
 </style>

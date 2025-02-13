@@ -95,3 +95,8 @@
       slider.style.transform = `translateX(-${scrollAmount}px)`;
     }
   });
+
+
+
+
+  action="https://formspree.io/f/xdkalgav" method="POST" class="ml-10"
