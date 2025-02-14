@@ -19,4 +19,3 @@ prev.addEventListener("click", () => {
     slider.style.transform = `translateX(-${scrollAmount}px)`;
   }
 });
-
