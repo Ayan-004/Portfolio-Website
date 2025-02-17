@@ -5,17 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./style.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.png" sizes="192x192" type="image/x-icon">
 </head>
+<title>Ayan's Portfolio</title>
 <body class="bg-[#e5e7df]">
 
   <section id="home">
   <div class="fixed top-0 w-full z-50 ">
   <div class="h-20 w-full flex justify-between items-center bg-opacity-50 backdrop-blur-xl md:px-12 lg:px-20">
 
-      <div class="text-[#1e1e1e] text-5xl md:text-6xl font-extrabold pl-15 transition-colors duration-500 ease-in-out hover:text-[#a18053] cursor-pointer">A<span class="text-gray-500">.</span></div>
+      <div class="text-[#1e1e1e] text-5xl md:text-6xl font-extrabold pl-10 transition-colors duration-500 ease-in-out hover:text-[#a18053] cursor-pointer">A<span class="text-gray-500">.</span></div>
 
       <!-- Mobile Menu Button -->
-      <button id="menu-btn" class="md:hidden text-3xl">☰</button>
+      <button id="menu-btn" class="md:hidden pr-10 text-2xl">☰</button>
 
       <ul class="hidden md:flex text-[rgb(30,30,30)] text-lg md:text-2xl font-bold space-x-6 lg:space-x-10 pr-9 ">
         <li class="relative cursor-pointer group"><a href="#home">Home</a>
@@ -35,23 +37,23 @@
 
   <!-- Mobile Menu -->
 
-  <ul id="mobile-menu" class="hidden felx flex-col bg-white text-[#1e1e1e] text-xl font-bold space-y-4 px-6 py-6 md-hidden">
-    <li><a href="#home">Home</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#education">Education</a></li>
-    <li><a href="#contact">Contact</a></li>
+  <ul id="mobile-menu" class="hidden felx flex-col bg-opacity-50 backdrop-blur-xl transition duration-500 text-[#1e1e1e] text-xl font-bold space-y-4 px-6 py-6 md-hidden">
+    <li><a href="#home" class="block w-full text-center">Home</a></li>
+    <li><a href="#about" class="block w-full text-center">About</a></li>
+    <li><a href="#education" class="block w-full text-center">Education</a></li>
+    <li><a href="#contact" class="block w-full text-center">Contact</a></li>
   </ul>
   </div>
 
-  <div class="flex flex-col md:flex-row w-full justify-between items-center pt-28 md:pt-32 px-6 md:px-12 lg-px-20">
+  <div class="flex flex-col md:flex-row w-full justify-between items-center pt-28 md:pt-32 px-10 md:px-12 lg:px-12">
     
-    <div class="text-[#1e1e1e] font-extrabold text-5xl md:text-7xl lg:text-8xl self-start md:text-left pt-8 pl-9 font-poppins">
+    <div class="text-[#1e1e1e] font-extrabold text-5xl md:text-7xl lg:text-8xl md:pl-12 lg:pl-16 self-start md:text-left pt-8 font-poppins">
       <div>Hi!</div>
       
       <div class="relative">
         I'm
 
-          <span class="absolute opacity-100 animate-fade-out">Ayan<span class="text-gray-500">.</span></span>
+          <span class="absolute opacity-100 animate-fade-out ml-1">Ayan<span class="text-gray-500">.</span></span>
 
           <span class="opacity-0 animate-fade-in">Frontend Developer<span class="text-gray-500">.</span></span>
 
@@ -59,7 +61,7 @@
     </div>
 
     <div class="self-start scale-75 lg:scale-105 md:text-right md:scale-95 lg:pr-30">
-    <img src="Homeimg.png" alt="" class="h-105 w-135">
+    <img src="Homeimg.png" alt="" class="max-w-full h-auto object-contain">
     </div>
     
   </div>
@@ -67,9 +69,9 @@
 
   <div class="bg-[#1e1e1e] w-full h-3 mt-21"><!--black strip--></div>
 
-  <section id="about" class="w-full px-6 md:px-12 lg:px-20 xl:px-40">
+  <section id="about" class="w-full px-10 md:px-12 lg:px-20 xl:px-40">
   <div class="w-full">
-    <div class="w-full mt-20 text-[#1e1e1e] text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-extrabold flex justify-end pr-5 lg:pr-20"><span class="transition-colors duration-500 ease-in-out hover:text-[#a18053] ">A</span>bout<span class="text-gray-500">.</span></div>
+    <div class="w-full mt-20 text-[#1e1e1e] text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-extrabold flex justify-end pr-5 lg:pr-10"><span class="transition-colors duration-500 ease-in-out hover:text-[#a18053] ">A</span>bout<span class="text-gray-500">.</span></div>
 
     <div class="w-full mt-10">
       <span class="text-3xl md:text-4xl text-[#1e1e1e] font-bold flex mt-10">Personal Introduction</span>
@@ -88,96 +90,14 @@
     
     <span class="text-3xl md:text-4xl text-[#1e1e1e] font-bold flex mt-10">What I Work With</span>
 
-    <div class="w-full max-w-[1250px] mx-auto px-5 relative overflow-hidden">
-      <div id="slider" class="flex gap-x-5 transition-transform duration-500 ease-in-out mt-3">
-  
-        <!-- Item 1 -->
-        <div class="flex space-x-5 h-40 sm:h-56 md:h-80">
-        <div class="min-w-[100px] sm:min-w-[120px] md:min-w-[150px] mt-3">
-          <div class="group relative bg-[#1e1e1e] h-30 w-30 sm:h-48 sm:w-48 md:h-52 md:w-52 lg:h-70 lg:w-70 rounded-full  flex justify-center items-center hover:cursor-default hover:scale-105 duration-300">
-            <img src="html.png" alt="HTML" class="duration-300 size-16 sm:size-24 md:size-32 lg:size-40 group-hover:blur-lg">
-            <span class="absolute text-lg sm:text-xl font-bold text-[#fafdf1] opacity-0 duration-500 group-hover:opacity-100">HTML</span>
-          </div>
-        </div>
-      
-  
-        <!-- Item 2 -->
-        <div class="min-w-[100px] sm:min-w-[120px] md:min-w-[150px] mt-3">
-          <div class="group relative bg-[#1e1e1e] h-30 w-30 sm:h-48 sm:w-48 md:h-52 md:w-52 lg:h-70 lg:w-70 rounded-full  flex justify-center items-center hover:cursor-default hover:scale-105 duration-300">
-            <img src="cssLogo.png" alt="CSS" class="duration-300 size-16 sm:size-24 md:size-32 lg:size-40 group-hover:blur-lg">
-            <span class="absolute text-lg sm:text-xl font-bold text-[#fafdf1] opacity-0 duration-500 group-hover:opacity-100">CSS</span>
-          </div>
-        </div>
-  
-        <!-- Item 3 -->
-        <div class="min-w-[100px] sm:min-w-[120px] md:min-w-[150px] mt-3">
-          <div class="group relative bg-[#1e1e1e] h-30 w-30 sm:h-48 sm:w-48 md:h-52 md:w-52 lg:h-70 lg:w-70 rounded-full  flex justify-center items-center hover:cursor-default hover:scale-105 duration-300">
-            <img src="javascriptLogo.png" alt="JavaScript" class="duration-300 size-16 sm:size-24 md:size-32 lg:size-40 group-hover:blur-lg">
-            <span class="absolute text-lg sm:text-xl font-bold text-[#fafdf1] opacity-0 duration-500 group-hover:opacity-100">JavaScript</span>
-          </div>
-        </div>
-
-        <!-- Item 4 -->
-        <div class="min-w-[100px] sm:min-w-[120px] md:min-w-[150px] mt-3">
-          <div class="group relative bg-[#1e1e1e] h-30 w-30 sm:h-48 sm:w-48 md:h-52 md:w-52 lg:h-70 lg:w-70 rounded-full  flex justify-center items-center hover:cursor-default hover:scale-105 duration-300">
-            <img src="tailwindcssLogo.png" alt="Tailwind" class="duration-300 size-16 sm:size-24 md:size-32 lg:size-40 group-hover:blur-lg">
-            <span class="absolute text-lg sm:text-xl font-bold text-[#fafdf1] opacity-0 duration-500 group-hover:opacity-100">Tailwind</span>
-          </div>
-        </div>
-  
-        <!-- Item 5 (Initially Hidden) -->
-        <div class="min-w-[100px] sm:min-w-[120px] md:min-w-[150px] mt-3">
-          <div class="group relative bg-[#1e1e1e] h-30 w-30 sm:h-48 sm:w-48 md:h-52 md:w-52 lg:h-70 lg:w-70 rounded-full  flex justify-center items-center hover:cursor-default hover:scale-105 duration-300">
-            <img src="reactLogo.png" alt="React" class="duration-300 size-16 sm:size-24 md:size-32 lg:size-40 group-hover:blur-lg">
-            <span class="absolute text-lg sm:text-xl font-bold text-[#fafdf1] opacity-0 duration-500 group-hover:opacity-100">React</span>
-          </div>
-        </div>
-  
-        <div class="min-w-[100px] sm:min-w-[120px] md:min-w-[150px] mt-3">
-          <div class="group relative bg-[#1e1e1e] h-30 w-30 sm:h-48 sm:w-48 md:h-52 md:w-52 lg:h-70 lg:w-70 rounded-full  flex justify-center items-center hover:cursor-default hover:scale-105 duration-300">
-            <img src="mysqlLogo.png" alt="MySQL" class="duration-300 size-16 sm:size-24 md:size-32 lg:size-40 group-hover:blur-lg">
-            <span class="absolute text-lg sm:text-xl font-bold text-[#fafdf1] opacity-0 duration-500 group-hover:opacity-100">MySQL</span>
-          </div>
-        </div>
-
-        <div class="min-w-[100px] sm:min-w-[120px] md:min-w-[150px] mt-3">
-          <div class="group relative bg-[#1e1e1e] h-30 w-30 sm:h-48 sm:w-48 md:h-52 md:w-52 lg:h-70 lg:w-70 rounded-full  flex justify-center items-center hover:cursor-default hover:scale-105 duration-300">
-            <img src="pythonLogo.png" alt="Python" class="duration-300 size-16 sm:size-24 md:size-32 lg:size-40 group-hover:blur-lg">
-            <span class="absolute text-lg sm:text-xl font-bold text-[#fafdf1] opacity-0 duration-500 group-hover:opacity-100">Python</span>
-          </div>
-        </div>
- 
-        <div class="min-w-[100px] sm:min-w-[120px] md:min-w-[150px] mt-3">
-          <div class="group relative bg-[#1e1e1e] h-30 w-30 sm:h-48 sm:w-48 md:h-52 md:w-52 lg:h-70 lg:w-70 rounded-full  flex justify-center items-center hover:cursor-default hover:scale-105 duration-300">
-            <img src="gitLogo.png" alt="Git" class="duration-300 size-16 sm:size-24 md:size-32 lg:size-40 group-hover:blur-lg">
-            <span class="absolute text-lg sm:text-xl font-bold text-[#fafdf1] opacity-0 duration-500 group-hover:opacity-100">Git</span>
-          </div>
-        </div>
-
-        <div class="min-w-[100px] sm:min-w-[120px] md:min-w-[150px] mt-3">
-          <div class="group relative bg-[#1e1e1e] h-30 w-30 sm:h-48 sm:w-48 md:h-52 md:w-52 lg:h-70 lg:w-70 rounded-full  flex justify-center items-center hover:cursor-default hover:scale-105 duration-300">
-            <img src="CLogo.png" alt="C" class="duration-300 size-16 sm:size-24 md:size-32 lg:size-40 group-hover:blur-lg">
-            <span class="absolute text-lg sm:text-xl font-bold text-[#fafdf1] opacity-0 duration-500 group-hover:opacity-100">C</span>
-          </div>
-        </div>
-
-        <div class="min-w-[100px] sm:min-w-[120px] md:min-w-[150px] mt-3">
-          <div class="group relative bg-[#1e1e1e] h-30 w-30 sm:h-48 sm:w-48 md:h-52 md:w-52 lg:h-70 lg:w-70 rounded-full  flex justify-center items-center hover:cursor-default hover:scale-105 duration-300">
-            <img src="C++Logo.png" alt="C++" class="duration-300 size-16 sm:size-24 md:size-32 lg:size-40 group-hover:blur-lg">
-            <span class="absolute text-lg sm:text-xl font-bold text-[#fafdf1] opacity-0 duration-500 group-hover:opacity-100">C++</span>
-          </div>
-        </div>
-
-        <div class="min-w-[100px] sm:min-w-[120px] md:min-w-[150px] mt-3">
-          <div class="group relative bg-[#1e1e1e] h-30 w-30 sm:h-48 sm:w-48 md:h-52 md:w-52 lg:h-70 lg:w-70 rounded-full  flex justify-center items-center hover:cursor-default hover:scale-95 duration-300">
-            <img src="javaLogo.png" alt="Java" class="duration-300 size-16 sm:size-24 md:size-32 lg:size-40 group-hover:blur-lg">
-            <span class="absolute text-lg sm:text-xl font-bold text-[#fafdf1] opacity-0 duration-500 group-hover:opacity-100">Java</span>
-          </div>
-        </div>
-        </div>
-      </div>
+    <div class="carousel-container w-full max-w-[1250px] mx-auto px-5 relative overflow-hidden">
+      <div id="slider" class="carousel flex gap-x-4 pb-16 transition-transform duration-500 ease-in-out mt-3">
+        
+        <!-- items will be added dynamically via javascript -->
+        
       </div>
     </div>
+  </div>
   
     <!-- Buttons -->
     <div class="flex justify-center items-center space-x-4">
@@ -196,68 +116,91 @@
     
   </div>
 
-  <section id="education">
+  <section id="education" class="w-full px-10 md:px-12 lg:px-20 xl:px-40">
   <div class="w-full">
-    <div class="w-full mt-20 text-[#1e1e1e] text-9xl font-extrabold flex flex-wrap justify-start px-30 ">Education<span class="text-gray-500">.</span></div>
+    <div class="w-full mt-20 text-[#1e1e1e] font-extrabold flex justify-start">
+      <h1 class="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl">
+        Education<span class="text-gray-500">.</span>
+      </h1>
+    </div>
 
     <div class="w-full">
-      <span class="text-4xl text-[#1e1e1e] font-bold flex ml-30 mt-20">Degree</span>
-      <span class="text-3xl text-[#1e1e1e] font-thin leading-9 flex px-30 mt-3">Bachelor of Science in Information Technology (BSc.IT).</span>
 
-      <span class="text-4xl text-[#1e1e1e] font-bold flex ml-30 mt-20">College Name & Duration</span>
-      <span class="text-3xl text-[#1e1e1e] font-thin leading-9 flex px-30 mt-3">K.M.Agrawal College | 2022-2025</span>
+      <span class="text-3xl md:text-4xl text-[#1e1e1e] font-bold flex mt-10">Degree</span>
+      <span class="text-lg md:text-2xl text-[#1e1e1e] font-thin leading-relaxed flex mt-3">Bachelor of Science in Information Technology (BSc.IT).</span>
 
-      <span class="text-4xl text-[#1e1e1e] font-bold flex ml-30 mt-20">Schooling</span>
-      <span class="text-3xl text-[#1e1e1e] font-thin leading-9 flex px-30 mt-3">Muhammadiya English High School | Passed 10th in 2020</span>
+      <span class="text-3xl md:text-4xl text-[#1e1e1e] font-bold flex mt-10">College Name & Duration</span>
+      <span class="text-lg md:text-2xl text-[#1e1e1e] font-thin leading-relaxed flex mt-3">K.M.Agrawal College | 2022-2025</span>
+
+      <span class="text-3xl md:text-4xl text-[#1e1e1e] font-bold flex mt-10">Schooling</span>
+      <span class="text-lg md:text-2xl text-[#1e1e1e] font-thin leading-relaxed flex mt-3">Muhammadiya English High School | Passed 10th in 2020</span>
+
+
     </div>
   </div>
 </section>
   <div class="bg-[#1e1e1e] w-full h-3 mt-30"><!--black strip--></div>
 
-  <section id="contact">
+  <!-- Contact Section -->
+
+  <section id="contact" class="w-full px-10 md:px-12 lg:px-20 xl:px-40">
   <div class="w-full">
-    <div class="w-full mt-20 text-[#1e1e1e] text-9xl font-extrabold flex flex-wrap justify-end pr-30 ">Contact<span class="text-gray-500">.</span></div>
+    <div class="w-full mt-20 text-[#1e1e1e] text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-extrabold flex justify-end pr-5 lg:pr-10">Contact<span class="text-gray-500">.</span></div>
 
-    <div class="flex justify-center items-center mt-20">
-      <div class="w-120 h-120 border-2 rounded-4xl flex justify-center items-center">
-        <form action="https://formspree.io/f/xdkalgav" method="POST">
+    <div class="flex justify-center items-center mt-20 px-4">
+      <div class="w-full max-w-lg p-8 border-2 rounded-3xl">
+        <form action="https://formspree.io/f/xdkalgav" method="POST" class="space-y-6">
 
-            <p class="text-[#1e1e1e] font-bold text-2xl">Name</p>
-            <input type="text" name="name" required class="bg-[#e5e7df] w-80 h-15 border-2 pl-3 rounded-2xl placeholder: font-bold">
+          <div>
+            <label class="text-[#1e1e1e] font-bold text-lg sm:text-2xl">Name</label>
+            <input type="text" name="name" required 
+            class="bg-[#e5e7df] w-full h-12 border-2 pl-3 rounded-2xl placeholder: font-bold focus:outline-none focus:ring-2 focus:ring-[#1e1e1e]">
+          </div>
 
-            <p class="text-[#1e1e1e] font-bold text-2xl">Email</p>
-            <input type="text" name="email" required class="bg-[#e5e7df] w-80 h-15 border-2 pl-3 rounded-2xl focus:bg-[#e5e7df] placeholder: font-bold">
+          <div>
+            <label class="text-[#1e1e1e] font-bold text-lg sm:text-2xl">Email</label>
+            <input type="email" name="email" required 
+            class="bg-[#e5e7df] w-full h-12 border-2 pl-3 rounded-2xl placeholder: font-bold focus:outline-none focus:ring-2 focus:ring-[#1e1e1e]">
+          </div>
 
-            <p class="text-[#1e1e1e] font-bold text-2xl">Message</p>
-            <textarea rows="4" cols="50"  type="text" name="message" required class="bg-[#e5e7df] w-80 h-30 border-2 pl-3 pt-3 rounded-2xl focus:bg-[#e5e7df] placeholder: font-bold resize-none"></textarea>
+          <div>
+            <label class="text-[#1e1e1e] font-bold text-lg sm:text-2xl">Message</label>
+            <textarea name="message" rows="4" required 
+            class="bg-[#e5e7df] w-full border-2 pl-3 pt-3 rounded-2xl focus:outline-none focus:ring-2 focus:ring-[#1e1e1e] placeholder: font-bold resize-none"></textarea>
+          </div>
 
           
-          <div class="flex justify-center items-center mt-5">
-            <button class=" bg-[#e5e7df] text-[#1e1e1e] w-25 h-10 border-2 rounded-xl transition-all ease-in-out duration-500 hover:bg-[#1e1e1e] cursor-pointer hover:text-[#e5e7df]">Submit</button>
+          <div class="flex justify-center">
+            <button type="submit" 
+            class=" bg-[#e5e7df] text-[#1e1e1e] px-6 py-3 border-2 rounded-xl transition-all duration-500 hover:bg-[#1e1e1e] hover:text-[#e5e7df] cursor-pointer">Submit</button>
           </div>
         </form>
       </div>
     </div>
   </div>
 </section>
-  <div class="bg-[#1e1e1e] text-[#e5e7df] font-bold w-full h-100 mt-30 flex flex-col items-center justify-center">
-    <h1 class=" text-lg">Designed & Developed by Ayan | © 2025 All Rights Reserved</h1>
 
-    <div class="mt-15 h-10 w-10 flex justify-center space-x-8">
+<!-- footer -->
 
-        <img src="/dist/linkedinLogo.png" alt="linkedin Logo" class="transition-all duration-300 ease-in-out block hover:scale-110 cursor-pointer" onclick="window.open('https://www.linkedin.com/in/ayan-shaikh-3659a0289/', '_blank');">
+  <footer class="bg-[#1e1e1e] text-[#e5e7df] font-bold w-full py-20 mt-30 flex flex-col items-center text-center space-y-10">
 
-        <img src="instagramLogo.png" alt="instagram Logo" class="transition-all duration-300 ease-in-out hover:scale-110 cursor-pointer" onclick="window.open('https://www.instagram.com/iamayyan_/', '_blank');">
+    <h1 class="text-base px-10 sm:text-lg">Designed & Developed by Ayan | © 2025 All Rights Reserved</h1>
 
-        <img src="githubLogo.png" alt="github Logo" class="transition-all duration-300 ease-in-out hover:scale-110 cursor-pointer" onclick="window.open('https://github.com/Ayan-004', '_blank');">
+    <div class="flex items-center justify-center space-x-6">
+
+        <img src="/dist/linkedinLogo.png" alt="linkedin Logo" class="w-8 h-8 sm:w-10 sm:h-10 transition-transform duration-300 hover:scale-110 cursor-pointer" onclick="window.open('https://www.linkedin.com/in/ayan-shaikh-3659a0289/', '_blank');">
+
+        <img src="instagramLogo.png" alt="instagram Logo" class="w-8 h-8 sm:w-10 sm:h-10 transition-transform duration-300 hover:scale-110 cursor-pointer" onclick="window.open('https://www.instagram.com/iamayyan_/', '_blank');">
+
+        <img src="githubLogo.png" alt="github Logo" class="w-8 h-8 sm:w-10 sm:h-10 transition-transform duration-300 hover:scale-110 cursor-pointer" onclick="window.open('https://github.com/Ayan-004', '_blank');">
 
       </div>
 
-        <h1 class="mt-15 text-lg">Looking for a developer? Let's connect!</h1>
-  </div>
+        <h1 class="text-base sm:text-lg">Looking for a developer? Let's connect!</h1>
+    </footer>
 
+    <script src="index.js"></script>
 </body>
-<script src="index.js"></script>
 </html>
 
 
@@ -265,6 +208,8 @@
 
 
 <style>
+
+  
 .scrollbar-hide::-webkit-scrollbar {
     display: none;
   }

@@ -127,3 +127,101 @@ prev.addEventListener("click", () => {
     slider.style.transform = `translateX(-${scrollAmount}px)`;
   }
 });
+
+
+
+
+
+
+<div class="flex space-x-4 h-40 sm:h-56 md:h-80">
+          <!-- Item 1 -->
+        <div class="min-w-[100px] sm:min-w-[120px] md:min-w-[150px] mt-3">
+          <div class="group relative bg-[#1e1e1e] h-30 w-30 sm:h-48 sm:w-48 md:h-52 md:w-52 lg:h-70 lg:w-70 rounded-full  flex justify-center items-center hover:cursor-default hover:scale-105 duration-300">
+            <img src="html.png" alt="HTML" class="duration-300 size-16 sm:size-24 md:size-32 lg:size-40 group-hover:blur-lg">
+            <span class="absolute text-lg sm:text-xl font-bold text-[#fafdf1] opacity-0 duration-500 group-hover:opacity-100">HTML</span>
+          </div>
+        </div>
+      
+  
+        <!-- Item 2 -->
+        <div class="min-w-[100px] sm:min-w-[120px] md:min-w-[150px] mt-3">
+          <div class="group relative bg-[#1e1e1e] h-30 w-30 sm:h-48 sm:w-48 md:h-52 md:w-52 lg:h-70 lg:w-70 rounded-full  flex justify-center items-center hover:cursor-default hover:scale-105 duration-300">
+            <img src="cssLogo.png" alt="CSS" class="duration-300 size-16 sm:size-24 md:size-32 lg:size-40 group-hover:blur-lg">
+            <span class="absolute text-lg sm:text-xl font-bold text-[#fafdf1] opacity-0 duration-500 group-hover:opacity-100">CSS</span>
+          </div>
+        </div>
+  
+        <!-- Item 3 -->
+        <div class="min-w-[100px] sm:min-w-[120px] md:min-w-[150px] mt-3">
+          <div class="group relative bg-[#1e1e1e] h-30 w-30 sm:h-48 sm:w-48 md:h-52 md:w-52 lg:h-70 lg:w-70 rounded-full  flex justify-center items-center hover:cursor-default hover:scale-105 duration-300">
+            <img src="javascriptLogo.png" alt="JavaScript" class="duration-300 size-16 sm:size-24 md:size-32 lg:size-40 group-hover:blur-lg">
+            <span class="absolute text-lg sm:text-xl font-bold text-[#fafdf1] opacity-0 duration-500 group-hover:opacity-100">JavaScript</span>
+          </div>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="min-w-[100px] sm:min-w-[120px] md:min-w-[150px] mt-3">
+          <div class="group relative bg-[#1e1e1e] h-30 w-30 sm:h-48 sm:w-48 md:h-52 md:w-52 lg:h-70 lg:w-70 rounded-full  flex justify-center items-center hover:cursor-default hover:scale-105 duration-300">
+            <img src="tailwindcssLogo.png" alt="Tailwind" class="duration-300 size-16 sm:size-24 md:size-32 lg:size-40 group-hover:blur-lg">
+            <span class="absolute text-lg sm:text-xl font-bold text-[#fafdf1] opacity-0 duration-500 group-hover:opacity-100">Tailwind</span>
+          </div>
+        </div>
+  
+        <!-- Item 5 (Initially Hidden) -->
+        <div class="min-w-[100px] sm:min-w-[120px] md:min-w-[150px] mt-3">
+          <div class="group relative bg-[#1e1e1e] h-30 w-30 sm:h-48 sm:w-48 md:h-52 md:w-52 lg:h-70 lg:w-70 rounded-full  flex justify-center items-center hover:cursor-default hover:scale-105 duration-300">
+            <img src="reactLogo.png" alt="React" class="duration-300 size-16 sm:size-24 md:size-32 lg:size-40 group-hover:blur-lg">
+            <span class="absolute text-lg sm:text-xl font-bold text-[#fafdf1] opacity-0 duration-500 group-hover:opacity-100">React</span>
+          </div>
+        </div>
+  
+        <div class="min-w-[100px] sm:min-w-[120px] md:min-w-[150px] mt-3">
+          <div class="group relative bg-[#1e1e1e] h-30 w-30 sm:h-48 sm:w-48 md:h-52 md:w-52 lg:h-70 lg:w-70 rounded-full  flex justify-center items-center hover:cursor-default hover:scale-105 duration-300">
+            <img src="mysqlLogo.png" alt="MySQL" class="duration-300 size-16 sm:size-24 md:size-32 lg:size-40 group-hover:blur-lg">
+            <span class="absolute text-lg sm:text-xl font-bold text-[#fafdf1] opacity-0 duration-500 group-hover:opacity-100">MySQL</span>
+          </div>
+        </div>
+
+        <div class="min-w-[100px] sm:min-w-[120px] md:min-w-[150px] mt-3">
+          <div class="group relative bg-[#1e1e1e] h-30 w-30 sm:h-48 sm:w-48 md:h-52 md:w-52 lg:h-70 lg:w-70 rounded-full  flex justify-center items-center hover:cursor-default hover:scale-105 duration-300">
+            <img src="pythonLogo.png" alt="Python" class="duration-300 size-16 sm:size-24 md:size-32 lg:size-40 group-hover:blur-lg">
+            <span class="absolute text-lg sm:text-xl font-bold text-[#fafdf1] opacity-0 duration-500 group-hover:opacity-100">Python</span>
+          </div>
+        </div>
+
+        <div class="min-w-[100px] sm:min-w-[120px] md:min-w-[150px] mt-3">
+          <div class="group relative bg-[#1e1e1e] h-30 w-30 sm:h-48 sm:w-48 md:h-52 md:w-52 lg:h-70 lg:w-70 rounded-full  flex justify-center items-center hover:cursor-default hover:scale-105 duration-300">
+            <img src="gitLogo.png" alt="Git" class="duration-300 size-16 sm:size-24 md:size-32 lg:size-40 group-hover:blur-lg">
+            <span class="absolute text-lg sm:text-xl font-bold text-[#fafdf1] opacity-0 duration-500 group-hover:opacity-100">Git</span>
+          </div>
+        </div>
+
+        <div class="min-w-[100px] sm:min-w-[120px] md:min-w-[150px] mt-3">
+          <div class="group relative bg-[#1e1e1e] h-30 w-30 sm:h-48 sm:w-48 md:h-52 md:w-52 lg:h-70 lg:w-70 rounded-full  flex justify-center items-center hover:cursor-default hover:scale-105 duration-300">
+            <img src="CLogo.png" alt="C" class="duration-300 size-16 sm:size-24 md:size-32 lg:size-40 group-hover:blur-lg">
+            <span class="absolute text-lg sm:text-xl font-bold text-[#fafdf1] opacity-0 duration-500 group-hover:opacity-100">C</span>
+          </div>
+        </div>
+
+        <div class="min-w-[100px] sm:min-w-[120px] md:min-w-[150px] mt-3">
+          <div class="group relative bg-[#1e1e1e] h-30 w-30 sm:h-48 sm:w-48 md:h-52 md:w-52 lg:h-70 lg:w-70 rounded-full  flex justify-center items-center hover:cursor-default hover:scale-105 duration-300">
+            <img src="C++Logo.png" alt="C++" class="duration-300 size-16 sm:size-24 md:size-32 lg:size-40 group-hover:blur-lg">
+            <span class="absolute text-lg sm:text-xl font-bold text-[#fafdf1] opacity-0 duration-500 group-hover:opacity-100">C++</span>
+          </div>
+        </div>
+
+        <div class=" min-w-[100px] sm:min-w-[120px] md:min-w-[150px] mt-3">
+          <div class="group relative bg-[#1e1e1e] h-30 w-30 sm:h-48 sm:w-48 md:h-52 md:w-52 lg:h-70 lg:w-70 rounded-full  flex justify-center items-center hover:cursor-default hover:scale-95 duration-300">
+            <img src="javaLogo.png" alt="Java" class="duration-300 size-16 sm:size-24 md:size-32 lg:size-40 group-hover:blur-lg">
+            <span class="absolute text-lg sm:text-xl font-bold text-[#fafdf1] opacity-0 duration-500 group-hover:opacity-100">Java</span>
+          </div>
+        </div>
+        </div>
+
+
+
+
+
+
+
+class="duration-300 size-16 sm:size-24 md:size-32 lg:size-40 group-hover:blur-lg"
