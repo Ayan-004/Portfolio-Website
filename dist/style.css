@@ -2232,6 +2232,9 @@
   .pt-10 {
     padding-top: calc(var(--spacing) * 10);
   }
+  .pt-20 {
+    padding-top: calc(var(--spacing) * 20);
+  }
   .pt-28 {
     padding-top: calc(var(--spacing) * 28);
   }
@@ -3526,6 +3529,16 @@
       line-height: var(--tw-leading, var(--text-xl--line-height));
     }
   }
+  .lg\:mr-16 {
+    @media (width >= 64rem) {
+      margin-right: calc(var(--spacing) * 16);
+    }
+  }
+  .lg\:mr-20 {
+    @media (width >= 64rem) {
+      margin-right: calc(var(--spacing) * 20);
+    }
+  }
   .lg\:size-6 {
     @media (width >= 64rem) {
       width: calc(var(--spacing) * 6);
@@ -3720,14 +3733,29 @@
       padding-inline: calc(var(--spacing) * 52);
     }
   }
+  .lg\:pr-7 {
+    @media (width >= 64rem) {
+      padding-right: calc(var(--spacing) * 7);
+    }
+  }
   .lg\:pr-10 {
     @media (width >= 64rem) {
       padding-right: calc(var(--spacing) * 10);
     }
   }
+  .lg\:pr-14 {
+    @media (width >= 64rem) {
+      padding-right: calc(var(--spacing) * 14);
+    }
+  }
   .lg\:pr-15 {
     @media (width >= 64rem) {
       padding-right: calc(var(--spacing) * 15);
+    }
+  }
+  .lg\:pr-16 {
+    @media (width >= 64rem) {
+      padding-right: calc(var(--spacing) * 16);
     }
   }
   .lg\:pr-20 {
