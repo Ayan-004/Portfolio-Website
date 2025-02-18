@@ -1,14 +1,29 @@
 const menuBtn = document.getElementById("menu-btn");
-  const mobileMenu = document.getElementById("mobile-menu");
+const mobileMenu = document.getElementById("mobile-menu");
+const hamburgerIcon = document.getElementById("hamburger-icon")
 
-  menuBtn.addEventListener("click", () => {
-    mobileMenu.classList.toggle("hidden");
+menuBtn.addEventListener("click", () => {
+  mobileMenu.classList.toggle("hidden");
   });
+
+  function toggleMenu() {
+    mobileMenu.classList.toggle('translate-y-0');
+    mobileMenu.classList.toggle('-translate-y-full');
+
+    if(mobileMenu.classList.contains('translate-y-0')) {
+      hamburgerIcon.textContent = 'X';
+    } else {
+      hamburgerIcon.textContent = '☰'
+    }
+  }
+
+  menuBtn.addEventListener('click', toggleMenu)
 
 document.addEventListener('DOMContentLoaded', function () {
   const slider = document.getElementById('slider');
   const prevButton = document.getElementById('prev');
   const nextButton = document.getElementById('next');
+  const submitButton = document.getElementById('submit');
 
   const carouselItems = [
     { src: 'html.png', label: 'HTML' },
@@ -75,13 +90,64 @@ document.addEventListener('DOMContentLoaded', function () {
     updateCarousel();
   });
 
+  nextButton.addEventListener("click", function () {
+    resetButtons();
+    this.style.backgroundColor = "#1e1e1e";
+    this.style.color = "#e5e7df";
+    this.style.transform = "scale(0.9)"
+
+    setTimeout(() => {
+      this.style.backgroundColor = "";
+      this.style.color = "";
+      this.style.transform = ""
+    }, 200);
+  });
+
+  prevButton.addEventListener("click", function () {
+    resetButtons();
+    this.style.backgroundColor = "#1e1e1e";
+    this.style.color = "#e5e7df";
+    this.style.transform = "scale(0.9)"
+
+    setTimeout(() => {
+      this.style.backgroundColor = "";
+      this.style.color = "";
+      this.style.transform = ""
+    }, 200);
+  });
+
+  submitButton.addEventListener("click", function () {
+    resetButtons();
+    this.style.backgroundColor = "#1e1e1e";
+    this.style.color = "#e5e7df";
+    this.style.transform = "scale(0.9)"
+
+    setTimeout(() => {
+      this.style.backgroundColor = "";
+      this.style.color = "";
+      this.style.transform = ""
+    }, 200);
+  });
+
+
+  function resetButtons() {
+    prevButton.style.backgroundColor = "";
+    prevButton.style.color = "";
+    nextButton.style.backgroundColor = "";
+    nextButton.style.color = "";
+    submitButton.style.backgroundColor = "";
+    submitButton.style.color = "";
+
+  }
+
+
   window.addEventListener('resize', function () {
     scrollStep = calculateScrollStep();
   });
 
   updateCarousel();
 
-  // Mobile Click Interaction
+
   document.querySelectorAll('.logo-item').forEach(item => {
     item.addEventListener('click', function () {
       if (window.innerWidth <= 786) {

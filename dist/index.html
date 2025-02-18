@@ -12,12 +12,14 @@
 
   <section id="home">
   <div class="fixed top-0 w-full z-50 ">
-  <div class="h-20 w-full flex justify-between items-center bg-opacity-50 backdrop-blur-xl md:px-12 lg:px-20">
+  <div class="h-20 w-full flex justify-between items-center bg-opacity-50 backdrop-blur-lg md:px-12 lg:px-20">
 
       <div class="text-[#1e1e1e] text-5xl md:text-6xl font-extrabold pl-10 transition-colors duration-500 ease-in-out hover:text-[#a18053] cursor-pointer">A<span class="text-gray-500">.</span></div>
 
       <!-- Mobile Menu Button -->
-      <button id="menu-btn" class="md:hidden pr-10 text-2xl">☰</button>
+      <button id="menu-btn" class="md:hidden pr-10 font-bold text-2xl">
+      <span id="hamburger-icon">☰</span>
+      </button>
 
       <ul class="hidden md:flex text-[rgb(30,30,30)] text-lg md:text-2xl font-bold space-x-6 lg:space-x-10 pr-9 ">
         <li class="relative cursor-pointer group"><a href="#home">Home</a>
@@ -37,7 +39,7 @@
 
   <!-- Mobile Menu -->
 
-  <ul id="mobile-menu" class="hidden felx flex-col bg-opacity-50 backdrop-blur-xl transition duration-500 text-[#1e1e1e] text-xl font-bold space-y-4 px-6 py-6 md-hidden">
+  <ul id="mobile-menu" class="hidden fixed top-20 left-0 right-0 bg-opacity-50 backdrop-blur-lg text-[#1e1e1e] text-xl font-bold space-y-4 px-6 py-6 md-hidden transform -translate-y-full transition-all duration-500 ease-in-out">
     <li><a href="#home" class="block w-full text-center">Home</a></li>
     <li><a href="#about" class="block w-full text-center">About</a></li>
     <li><a href="#education" class="block w-full text-center">Education</a></li>
@@ -60,8 +62,9 @@
       </div>
     </div>
 
-    <div class="self-start scale-75 lg:scale-105 md:text-right md:scale-95 lg:pr-30">
-    <img src="Homeimg.png" alt="" class="max-w-full h-auto object-contain">
+    <div class="self-start scale-105 lg:scale-125 md:text-right md:scale-110 lg:pr-20">
+    <img src="Home.gif" alt="" class="max-w-full h-auto object-contain">
+    <!-- <video src="Home.gif" class="max-w-full h-auto object-contain"></video> -->
     </div>
     
   </div>
@@ -75,17 +78,17 @@
 
     <div class="w-full mt-10">
       <span class="text-3xl md:text-4xl text-[#1e1e1e] font-bold flex mt-10">Personal Introduction</span>
-      <span class="text-lg md:text-2xl text-[#1e1e1e] font-thin leading-relaxed flex mt-3">Hey there! I'm Ayan, a passionate web developer who loves building intuitive and interactive user experiences. I believe that clean design and efficient code go hand in hand to create great digital experiences.</span>
+      <span class="text-lg md:text-2xl text-[#1e1e1e] font-light leading-relaxed flex mt-3">Hey there! I'm Ayan, a passionate web developer who loves building intuitive and interactive user experiences. I believe that clean design and efficient code go hand in hand to create great digital experiences.</span>
     </div>
 
     <div class="w-full ">
       <span class="text-3xl md:text-4xl text-[#1e1e1e] font-bold flex mt-10">Journey</span>
-      <span class="text-lg md:text-2xl text-[#1e1e1e] font-thin leading-relaxed flex mt-3">I started my coding journey in college, and since then, I’ve been fascinated by how websites and applications come to life. I enjoy experimenting with new technologies and constantly learning to improve my craft.</span>
+      <span class="text-lg md:text-2xl text-[#1e1e1e] font-light leading-relaxed flex mt-3">I started my coding journey in college, and since then, I’ve been fascinated by how websites and applications come to life. I enjoy experimenting with new technologies and constantly learning to improve my craft.</span>
     </div>
 
     <div class="w-full ">
       <span class="text-3xl md:text-4xl text-[#1e1e1e] font-bold flex mt-10">Future Goals</span>
-      <span class="text-lg md:text-2xl text-[#1e1e1e] font-thin leading-relaxed flex mt-3">In the near future, I aim to become a full-stack developer and work on impactful projects that improve user experiences on the web.</span>
+      <span class="text-lg md:text-2xl text-[#1e1e1e] font-light leading-relaxed flex mt-3">In the near future, I aim to become a full-stack developer and work on impactful projects that improve user experiences on the web.</span>
     </div>
     
     <span class="text-3xl md:text-4xl text-[#1e1e1e] font-bold flex mt-10">What I Work With</span>
@@ -102,12 +105,12 @@
     <!-- Buttons -->
     <div class="flex justify-center items-center space-x-4">
 
-      <button id="prev" class="p-2 border border-[#1e1e1e] w-10 h-10 rounded-full hover:bg-[#1e1e1e] hover:text-white transition cursor-pointer">
-        &#11207;
+      <button id="prev" class="pb-3 flex justify-center items-center p-1 border border-[#1e1e1e] w-12 h-12 text-3xl leading-none rounded-full hover:bg-[#1e1e1e] hover:text-white transition duration-300 cursor-pointer">
+        &#8249;
       </button>
   
-      <button id="next" class="p-2 border border-[#1e1e1e] w-10 h-10 rounded-full hover:bg-[#1e1e1e] hover:text-white transition cursor-pointer">
-        &#11208;
+      <button id="next" class="pb-3 flex justify-center items-center p-1 border border-[#1e1e1e] w-12 h-12 text-3xl leading-none rounded-full hover:bg-[#1e1e1e] hover:text-white transition duration-300 cursor-pointer">
+        &#8250;
       </button>
     </div>
   </section>
@@ -127,13 +130,13 @@
     <div class="w-full">
 
       <span class="text-3xl md:text-4xl text-[#1e1e1e] font-bold flex mt-10">Degree</span>
-      <span class="text-lg md:text-2xl text-[#1e1e1e] font-thin leading-relaxed flex mt-3">Bachelor of Science in Information Technology (BSc.IT).</span>
+      <span class="text-lg md:text-2xl text-[#1e1e1e] font-light leading-relaxed flex mt-3">Bachelor of Science in Information Technology (BSc.IT).</span>
 
       <span class="text-3xl md:text-4xl text-[#1e1e1e] font-bold flex mt-10">College Name & Duration</span>
-      <span class="text-lg md:text-2xl text-[#1e1e1e] font-thin leading-relaxed flex mt-3">K.M.Agrawal College | 2022-2025</span>
+      <span class="text-lg md:text-2xl text-[#1e1e1e] font-light leading-relaxed flex mt-3">K.M.Agrawal College | 2022-2025</span>
 
       <span class="text-3xl md:text-4xl text-[#1e1e1e] font-bold flex mt-10">Schooling</span>
-      <span class="text-lg md:text-2xl text-[#1e1e1e] font-thin leading-relaxed flex mt-3">Muhammadiya English High School | Passed 10th in 2020</span>
+      <span class="text-lg md:text-2xl text-[#1e1e1e] font-light leading-relaxed flex mt-3">Muhammadiya English High School | Passed 10th in 2020</span>
 
 
     </div>
@@ -171,8 +174,8 @@
 
           
           <div class="flex justify-center">
-            <button type="submit" 
-            class=" bg-[#e5e7df] text-[#1e1e1e] px-6 py-3 border-2 rounded-xl transition-all duration-500 hover:bg-[#1e1e1e] hover:text-[#e5e7df] cursor-pointer">Submit</button>
+            <button type="submit" id="submit"
+            class="bg-[#e5e7df] text-[#1e1e1e] px-6 py-3 border-2 rounded-xl transition duration-300 hover:bg-[#1e1e1e] hover:text-[#e5e7df] cursor-pointer">Submit</button>
           </div>
         </form>
       </div>
@@ -188,7 +191,7 @@
 
     <div class="flex items-center justify-center space-x-6">
 
-        <img src="/dist/linkedinLogo.png" alt="linkedin Logo" class="w-8 h-8 sm:w-10 sm:h-10 transition-transform duration-300 hover:scale-110 cursor-pointer" onclick="window.open('https://www.linkedin.com/in/ayan-shaikh-3659a0289/', '_blank');">
+        <img id="linkedin" src="linkedinLogo.png" alt="linkedin Logo" class="w-8 h-8 sm:w-10 sm:h-10 transition-transform duration-300 hover:scale-110 cursor-pointer" onclick="window.open('https://www.linkedin.com/in/ayan-shaikh-3659a0289/', '_blank');">
 
         <img src="instagramLogo.png" alt="instagram Logo" class="w-8 h-8 sm:w-10 sm:h-10 transition-transform duration-300 hover:scale-110 cursor-pointer" onclick="window.open('https://www.instagram.com/iamayyan_/', '_blank');">
 
@@ -208,7 +211,6 @@
 
 
 <style>
-
   
 .scrollbar-hide::-webkit-scrollbar {
     display: none;
