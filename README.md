@@ -5,10 +5,10 @@ This is my personal portfolio website, designed to showcase my journey in web de
 
 📌 Pages Overview
 
-🏠 Home: An introduction and welcome section.
-👤 About: My background, interests, and career goals.
-🎓 Education: My academic journey and qualifications.
-📞 Contact: A simple way to get in touch with me.
+🏠 Home: An introduction and welcome section.<br>
+👤 About: My background, interests, and career goals.<br>
+🎓 Education: My academic journey and qualifications.<br>
+📞 Contact: A simple way to get in touch with me.<br>
 
 🛠️ Tech Stack
 Frontend: HTML, CSS, JavaScript, TailwindCSS, React, MySQL, Python, C, C++, Java
