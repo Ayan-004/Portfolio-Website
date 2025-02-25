@@ -825,6 +825,9 @@
     width: calc(var(--spacing) * 16);
     height: calc(var(--spacing) * 16);
   }
+  .h-0 {
+    height: calc(var(--spacing) * 0);
+  }
   .h-0\.5 {
     height: calc(var(--spacing) * 0.5);
   }
@@ -860,6 +863,9 @@
   }
   .w-0 {
     width: calc(var(--spacing) * 0);
+  }
+  .w-1 {
+    width: calc(var(--spacing) * 1);
   }
   .w-1\/2 {
     width: calc(1/2 * 100%);
@@ -1899,6 +1905,14 @@
   .leading-relaxed {
     --tw-leading: var(--leading-relaxed);
     line-height: var(--leading-relaxed);
+  }
+  .font-\[950\] {
+    --tw-font-weight: 950;
+    font-weight: 950;
+  }
+  .font-\[1000\] {
+    --tw-font-weight: 1000;
+    font-weight: 1000;
   }
   .font-black {
     --tw-font-weight: var(--font-weight-black);
