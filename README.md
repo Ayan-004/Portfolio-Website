@@ -11,7 +11,7 @@
 
 🛠️ Tech Stack<br>
 Frontend: HTML, CSS, JavaScript, TailwindCSS, React, MySQL, Python, C, C++, Java<br>
-Tools & Platforms: Git, GitHub
+Tools & Platforms: Git, GitHub, VScode
 
 🌍 Live Demo<br>
 🔗 [https://ayancreates.netlify.app/]</h4>
