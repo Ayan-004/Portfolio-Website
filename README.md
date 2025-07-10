@@ -11,7 +11,7 @@
 
 🛠️ Tech Stack<br>
 Frontend: HTML, CSS, TailwindCSS,<br>
-Tools & Platforms: Git, GitHub, VScode
+Tools & Platforms: Git, GitHub, VScode, Formspree
 
 🌍 Live Demo<br>
 🔗 [https://ayancreates.netlify.app/]</h4>
