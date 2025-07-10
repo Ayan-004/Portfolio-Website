@@ -1,7 +1,6 @@
 # 🌐My Portfolio Website
 
-🚀 About the Project
-This is my personal portfolio website, designed to showcase my journey in web development. It highlights my skills, education, and ways to connect with me.
+🚀 This is my personal portfolio website, designed to showcase my journey in web development. It highlights my skills, education, and ways to connect with me.
 
 # 📌 Pages Overview
 
