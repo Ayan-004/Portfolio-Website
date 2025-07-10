@@ -10,7 +10,7 @@
 📞 Contact: A simple way to get in touch with me.<br></h4>
 
 🛠️ Tech Stack<br>
-Frontend: HTML, CSS, JavaScript, TailwindCSS, React, MySQL, Python, C, C++, Java<br>
+Frontend: HTML, CSS, TailwindCSS,<br>
 Tools & Platforms: Git, GitHub, VScode
 
 🌍 Live Demo<br>
